@@ -1,7 +1,20 @@
-# Blog of Song Kong
-This is a Jekyll theme called Ice bear.
+## Emoji finder [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-To learn how to install and use this theme, please check out the [installation guide](http://kongsong.me/blog/ice-bear-jekyll-theme/) for more information.
+:heart: me some emoji. Go to http://emoji.muan.co/
 
-##License
-This theme is open source under MIT License. So feel free to use this Jekyll theme on your site, although linking back to me is more than welcomed.
+![unicorn](http://cl.ly/image/1p110H2M0r0O/unicorn.gif)
+
+:octopus: :zap: :cat: = :octocat:<br />
+Find the emoji that echoes your heart using keywords
+
+:raised_hands::gun::moneybag::police_car::boom::hospital::syringe::skull:<br />
+Tell a story
+
+:oden::spaghetti::cookie::stew::ice_cream::icecream::sushi::curry::custard::dango::pizza::ramen::fried_shrimp::fries::chocolate_bar::hamburger:<br />
+View emoji in groups and food-attack hungry people
+
+#### Please contribute :pray:
+
+**As of 2015/07/10, the emoji keyword library has been migrated to its own repository [muan/emojilib](https://github.com/muan/emojilib).**
+
+There are almost 900 emoji, more keywords let you find emoji more easily. Go to [`emojis.json`](https://github.com/muan/emojilib/blob/master/emojis.json) for the list of emoji & keywords.
