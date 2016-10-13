@@ -1,32 +1,39 @@
-# Permalinks
-permalink:           pretty
+# Site settings
+title: Limpid Jekyll Theme
+email: pranav@maangalabs.com
+description: Limpid Jekyll Theme is a clean, minimal theme for Jekyll websites.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://maangalabs.com" # the base hostname & protocol for your site
+#twitter
+twitter_username: pranavrajs
+github_username:  pranavrajs
 
-# Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
-baseurl:             ""
+#linkedin
+linkedin_username: pranavrajs
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+#google analytics
+google_analytics_id : UA-53386152-2
+#gplus
+gplus_username: 101893920934936418705
 
-# About/contact
-author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+#fb_username
+fb_username: pranav.tayberrycreative
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+#permalink /blog/2014/11/11/this-is-a-sample-post
+permalink: /blog/:year/:month/:day/:title/
+# Build settings
+markdown: kramdown
 
-# Gems
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+#Disqus configuration
+disqus_short_name: maangalabscom
+disqus_show_comment_count: true
+
+#Can be used for multiple author blogs ! Add name to post For more visit the sample
+authors:
+  pranavrajs:
+    display_name: Pranav Raj S
+    email: pranavrajs@gmail.com
+    fb: pranav.tayberrycreative
+    linkedin: pranavrajs
+    twitter: pranavrajs
+    github: pranavrajs
