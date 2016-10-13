@@ -1,40 +1,15 @@
-# CONTRIBUTING
+All contributions, including merge requests, feature requests, ideas, design tweaks, etc. are welcome. 
+I welcome all input, from sharing your own implementations of code to general thoughts and ideas. Just open a new issue!
 
-Thanks for thinking about contributing to this project. :heart_eyes:
+## Feature Requests
 
-## What do you want to do?
+Feature requests are always welcome! If Jekyll can do it and if the theme's design would work well with it, then I would love to add it. Of course, 
+code submission via a merge/pull request is great, but not necessary.
 
-#### JavaScript changes
+## Bug Reports
 
-Change the files in `/javascripts`.
+If you encounter any issues with these themes on any devices, please submit a bug report with the device type and a detailed description of what 
+the issue that you're encountering is.
+<br /><br />
 
-#### CSS changes
-
-The CSS is currently compiled from SCSS, so you will need to install and develop in SASS, then include the compiled CSS file in your commits.
-
-## Coding Style
-
-When in doubt, follow https://github.com/styleguide.
-
-## Development
-
-To run emoji locally, grab [Foreman](https://ddollar.github.io/foreman/) and run it from the project root:
-
-`foreman start`
-
-This will do the following:
-
-- Start sass to compile the stylesheets and watch for changes.
-- Start WEBrick to serve the site.
-
-Once foreman is running you can visit http://localhost:4001 to view the site.
-
-When you're done, press `ctrl + c` to stop everything.
-
-## Commiting, sending the pull request
-
-- Make sure you have a good description in the pull request if your changes contain more than keyword changes.<br>
-  :x: `Update html`<br>
-  :o: `Change a typo in the toggle text button`
-
-- Include at least one emoji in your pull request description.
+*Thank you*
