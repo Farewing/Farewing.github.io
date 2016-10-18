@@ -1,26 +1,10 @@
-Limpid Jekyll Theme
+#一点点说明
 
-Clone the repo to get started
+这是[BeiYuu.com](http://beiyuu.com)的示例代码，如果你看了[使用Github Pages建独立博客](http://beiyuu.com/github-pages)，希望看下去哦：
 
-Included :
-
- * Facebook/Twitter/LinkedIn/G+ Share
- * Disqus Integration
- * Prettify JS Code highlighter
- * Font Awesome
- * Author block and profile
- * Download source facility
- * Feature image on posts
-
-# Desktop Preview
-
-![alt text](images/ss-1.png "Desktop Preview 1")
-![alt text](images/ss-2.png "Desktop Preview 2")
-![alt text](images/ss-3.png "Desktop Preview 3")
-
-
-# Mobile Preview
-
-![alt text](images/ss-mobile.png "Mobile Preview 1")
-
-If you are using this theme. Please update the wiki with your url.
+* 马上动手，很赞
+* 感谢认可
+* 推荐阅读：[我为什么写博客？](http://beiyuu.com/why-blog)
+* 想复用我的设计，没问题，标个出处就好啦
+* 转载也没问题，标个出处呗少年
+* 恩，认真的童鞋最可爱啦~
