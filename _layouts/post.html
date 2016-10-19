@@ -1,47 +1,27 @@
 ---
 layout: default
+title: Home
 ---
 
-<link rel="stylesheet" href="/js/prettify/prettify.css" />
-<style type="text/css">
-    body { background:#e8e8e8; }
-    @media screen and (max-width: 750px){
-        body { background:#fff; }
-    }
-    @media screen and (max-width: 1020px){
-        body { background:#fff; }
-    }
-</style>
-
-<div id="content">
-    <div class="entry">
-        <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
-        <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
-        {{ content }}
-    </div>
-
-    <div class="sidenav">
-        <h2>Blog</h2>
-        <ul class="artical-list">
-        {% for post in site.categories.blog%}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
-
-        <h2>Dump</h2>
-        <ul class="artical-list">
-        {% for post in site.categories.dump%}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
-
-        <h2>Project</h2>
-        <ul class="artical-list">
-        {% for post in site.categories.project%}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
-    </div>
+<div class='xs-12 topBar hidden'>
+  <p>{{ page.title }}</p>
 </div>
 
-<script src="/js/post.js" type="text/javascript"></script>
+<div class="xs-12 imgBack textCenter vertCenter banner" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ page.thumbnail }})'>
+  <div>
+    <a class='caps post-title' href='{{ post.url }}'>{{ page.title }}</a>
+    <p class='meta'>{{ page.date | date_to_long_string }} / by {{ page.author }}</p>
+  </div>
+</div>
+
+<div class='divider xs-12 topBarTrigger'></div>
+
+<div class='post-wrap'>
+  <h1>{{ page.title }}</h1>
+  <p class='meta'>
+    {{ page.author }} // {{ page.date | date_to_long_string }}
+  </p>
+
+  {{ content }}
+
+</div>

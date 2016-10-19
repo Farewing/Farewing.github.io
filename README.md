@@ -1,8 +1,7 @@
-#一点点说明
+#Artist Theme: A Free Theme for Jekyll Sites
 
-这是[mukosame.github.io](http://mukosame.github.io)的示例代码，第一个能用的，干净的，完全可以作为模板和基础的版本
-* 感谢来自于beiyuu的设计(http://beiyuu.com/)
-* 希望你喜欢
-* 欢迎star
-* 欢迎fork
-* Happy hacking ^_^
+##Dependencies
+1. Jekyll
+2. Gulp
+3. Sass
+4. Jade
