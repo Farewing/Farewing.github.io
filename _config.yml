@@ -1,23 +1,14 @@
-# Default, Defaults
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-
-# Jekyll Defaults
-title: Artist Theme
+# Site settings
+title: Ion
 email: your-email@domain.com
-description: A small and simple site I made to test out Jekyll. Watch out! I'm going to make a material design theme next!
-baseurl: "http://localhost:3000" # the subpath of your site, e.g. /blog
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl:  # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# Where can people find your site?
-url: "http://localhost:3000"
-# When developing, set this ^ equal to whatever localhost you're using
-
-# Socail Media links
-# Use these to link users to your organization's social media sites
-twitter:
-facebook:
-google:
-
-author: Nina Petropoulos
-authorBio: A English major by day, a musician by night, and a web developer because of the summer I was bored - my name's Nina and I hope you enjoy my Hello Portland theme, the second theme I've made with Jekyll.
+# Build settings
+markdown: kramdown
