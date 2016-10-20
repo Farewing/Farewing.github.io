@@ -24,14 +24,16 @@ layout: default
 <section>
     <div class="container">
         <div class="features">
-        {% for post in site.posts offset:1 %}
+        {% for post in site.posts limit:8 offset:1 %}
             <article>
                 <section class="excerpt">
                 <header>
                     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                 </header>
                 
-                    {{ post.content | truncatewords: 30 }}
+                <section class="post-content">
+                    {{ post.excerpt }}
+                </section>
                 </section>
                 <footer>
                     <ul class="actions">
