@@ -9,7 +9,7 @@ permalink: "/info/"
 
 我本不是一个善于整理收藏的人，希望能通过本站 *Farewing's Tinyhouse* 来记录自己学习进步的历程以及生活中小的感悟，刚接触前端不久，正在不断磨练自己的技术，并且寻求前端开发岗位。
 
-在学习过程中感谢 [freeCodeCamp][1] 提供学习的平台，[Coursera][2] 提供相关的课程教学以及 [知乎][3] 各位知友分享自己的学习经验，这些对我的帮助真的很大。
+在学习过程中感谢 [freeCodeCamp][1] 提供学习的平台，[Coursera][2] 提供相关的课程教学，[MDN][5]提供有关开放网络技术(Open Web)的信息和相关技术文档，以及 [知乎][3] 各位知友分享自己的学习经验。
 
 这个网站的源代码位于[此仓库][4]。
 
@@ -19,4 +19,4 @@ permalink: "/info/"
  [2]: https://www.coursera.com/
  [3]: https://www.zhihu.com/
  [4]: https://github.com/farewing/
-
+ [4]: https://developer.mozilla.org/zh-CN/

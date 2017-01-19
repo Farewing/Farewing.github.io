@@ -1,9 +1,13 @@
 ---
 layout: page
 title: Basic Algorithm Scripting
-teaser: "该部分为freeCodeCamp训练中Javascript基础算法，在此只记录题目和解法，思路略"
+subheadline: "freeCodeCamp基础算法"
+teaser: "该部分为freeCodeCamp训练中Javascript基础算法，在此只记录题目和解法，思路略。 "
 categories:
     - web
+tags:
+    - web
+    - algorithm
 header: no
 image:
     title: mediaplayer_js-title.jpg
@@ -16,7 +20,7 @@ image:
 freeCodeCamp训练中Javascript基础算法地址[戳这里][1]。
 
 
-## Reverse a String
+### Reverse a String
 翻转字符串
 
 先把字符串转化成数组，再借助数组的reverse方法翻转数组顺序，最后把数组转化成字符串。
@@ -36,7 +40,7 @@ reverseString("hello");
 
 
 
-## Check for Palindromes
+### Check for Palindromes
 如果给定的字符串是回文，返回true，反之，返回false。
 
 如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是palindrome(回文)。
@@ -56,7 +60,7 @@ palindrome("eye");
 
 
 
-## Find the Longest Word in a String 
+### Find the Longest Word in a String 
 
 找到提供的句子中最长的单词，并计算它的长度。
 
@@ -78,7 +82,7 @@ findLongestWord("The quick brown fox jumped over the lazy dog");
 
 
 
-## Title Case a Sentence
+### Title Case a Sentence
 确保字符串的每个单词首字母都大写，其余部分小写。
 
 像'the'和'of'这样的连接符同理。
@@ -97,7 +101,7 @@ titleCase("I'm a little tea pot");
 
 
 
-## Chunky Monkey 
+### Chunky Monkey 
 猴子吃香蕉可是掰成好几段来吃哦！
 
 把一个数组arr按照指定的数组大小size分割成若干个数组块。
@@ -121,7 +125,7 @@ chunk([0, 1, 2, 3, 4, 5], 2);
 
 
 
-## Mutations
+### Mutations
 蛤蟆可以吃队友，也可以吃对手。
 
 如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。
@@ -154,7 +158,7 @@ mutation(["hello", "hey"]);
 
 
 
-## Falsy Bouncer
+### Falsy Bouncer
 真假美猴王！
 
 删除数组中的所有假值。
@@ -173,7 +177,7 @@ bouncer([false, null, 0, NaN, undefined, ""]);
 
 
 
-## Seek and Destroy
+### Seek and Destroy
 
 金克斯的迫击炮！
 
@@ -197,7 +201,7 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
 
 
-## Where do I belong
+### Where do I belong
 
 我身在何处？
 
@@ -220,6 +224,11 @@ where([2, 5, 10], 15);
 {% endhighlight %}
 
 
+
+### All Algorithm-Level
+{: .t60 }
+
+{% include list-posts tag='algorithm' %}
 
 
 
