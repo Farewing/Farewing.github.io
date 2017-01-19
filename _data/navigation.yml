@@ -1,0 +1,20 @@
+- title: <span class="icon-tree"/>
+  url: "/"
+  side: left
+
+- title: "前端之路"
+  url: "/web/"
+  side: left
+
+- title: "机器学习"
+  url: "/design/"
+  side: left
+
+- title: "杂文日记"
+  url: "/misc/"
+  side: left
+
+- title: "简历"
+  url: "/cv/"
+  side: right
+

@@ -1,0 +1,20 @@
+- name: GitHub
+  url: http://github.com/farewing
+  class: icon-github
+
+- name: Weibo
+  url: http://weibo.com/farewing
+  class: icon-weibo
+
+- name: Zhihu
+  url: http://zhihu.com/people/farewing
+  class: icon-zhihu
+
+- name: Linkedin
+  url: http://www.linkedin.com/in/farewing
+  class: icon-linkedin
+
+- name: E-Mail
+  url: mailto:miloyip@gmail.com
+  class: icon-mail
+
