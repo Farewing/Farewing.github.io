@@ -2,9 +2,9 @@
 layout: page
 show_meta: false
 title: "Style your content!"
-subheadline: "Layouts of Feeling Responsive"
+subheadline: "Layouts of Farewing"
 header:
-   image_fullwidth: "header_unsplash_11.jpg"
+   image_fullwidth: header_unsplash_11.jpg
 permalink: "/design/"
 ---
 <ul>
