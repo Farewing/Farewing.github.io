@@ -9,7 +9,7 @@ header:
   image_fullwidth: "header-bus.jpg"
 widget1:
   title: "Blog & Portfolio"
-  url: 'http://localhost:4000/blog/'
+  url: 'http://farewing.github.io/blog/'
   image: widget-1-302x182.jpg
   text: '这是一个学习成长记录生活的小杂货铺子，希望可以借助本站记录整理学习历程并保存生活中记忆片段的索引，包括前端开发和机器学习两部分，刚接触前端不久，正在不断磨练自己的技术，并寻求前端开发岗位。'
 widget2:

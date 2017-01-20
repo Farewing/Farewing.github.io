@@ -119,7 +119,6 @@ find([1, 2, 3, 4], function(num){ return num % 2 === 0; });
 
 {% highlight javascript %}
 function drop(arr, func) {
-  // Drop them elements.
   var tmp;
       var res = [];
       for(var i=0,len=arr.length;i<len;i++){
@@ -134,7 +133,6 @@ function drop(arr, func) {
 }
 
 drop([1, 2, 3], function(n) {return n < 3; });
-
 {% endhighlight %}
 
 
@@ -182,12 +180,10 @@ function binaryAgent(str) {
   for(var i in t) {
     s += String.fromCharCode(parseInt(t[i], 2));
   }
-  
   return s;
 }
 
 binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
-
 {% endhighlight %}
 
 
