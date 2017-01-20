@@ -33,7 +33,7 @@ widget3:
 # To change colors see sass/_01_settings_colors.scss
 #
 callforaction: 
-  url: https://tinyletter.com/feeling-responsive
+  url: https://farewing.github.io/cv
   text: Click for more info about me ›
   style: secondary
 permalink: /index.html
