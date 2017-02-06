@@ -11,7 +11,8 @@ header: no
 image:
     title: pic_nainai.jpg
     thumb: pic_momo.jpg
-    caption: Photo by Farewing
+    homepage: mediaplayer_js-home.jpg
+    caption: Photograph by Farewing
     caption_url: http://lhr0-0.lofter.com/
 ---
 
@@ -29,10 +30,17 @@ image:
 第一次约会，第一次合照，第一次相拥，第一次争吵，第一次接吻，第一次被大雨淋的湿透，第一次“互殴”，第一次...... 
 
 
-### 铁公鸡和母老虎
+### 嘿，你看见月亮了么
 
 ![pic03](/images/pic03.jpg)
 
-不知道写啥 嘿嘿嘿 
-# 你去写...... 
+好想把你踹醒 也好想看你睡觉 
+好想和你打架 也好想抱你 
+好想欺负你 也好想亲你 
+好想见你 好想你 
+
+突然觉得生活好平淡，好像所有的期待都堆积在一起，急匆匆的催着每一天，盼望着见你。一直以来，缩在壳子里看世界，可能喜欢也是一种病症，更受不得轻视，总觉得很奇妙，默契又互补，どうもありがとう，多希望自己有足够好。睡了么？想亲你一下，不！亲一大口！
+
+看到一句可爱的话，“你先睡吧 我还要去给你摘星星”。
+
 
