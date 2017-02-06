@@ -7,23 +7,34 @@
 
     <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
 
-  
-
 	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-	<script>
-		WebFont.load({
-			google: {
-				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
-			}
-		});
-	</script>
+<script>
+    WebFontConfig = {
+      google: { families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] }
+    };
 
-	<noscript>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
-	</noscript>
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7cVolkhov' rel='stylesheet' type='text/css'>
+  </noscript>
 
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+  </script>
+  <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 	<!-- Search Engine Optimization -->
 	<meta name="description" content="»Farewing&#39;s Tinyhouse« is a personal blog website for recording my dialy life and the course of self-studying in machine learning &amp; web development.">
@@ -35,22 +46,9 @@
 	<link rel="canonical" href="http://localhost:4000/index.html">
 
 
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="Farewing&#39;s Tinyhouse">
-	<meta property="og:description" content="»Farewing&#39;s Tinyhouse« is a personal blog website for recording my dialy life and the course of self-studying in machine learning &amp; web development.">
-	<meta property="og:url" content="http://localhost:4000/index.html">
-	<meta property="og:locale" content="en_EN">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Farewing's Tinyhouse">
-	
-	
-
-
-	
 
 	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
 
-	
 
 	
 
@@ -377,9 +375,9 @@
     
       <li><a href="http://localhost:4000/misc/for-nainai2/"><strong>请等我下</strong></a></li>
     
-      <li><a href="http://localhost:4000/web/intermediate-algorithm-scripting-3/">freeCodeCamp中阶算法（三） &middot; <strong>Intermediate Algorithm Scripting（三）</strong></a></li>
+      <li><a href="http://localhost:4000/graphics/alice-hair/"><strong>爱丽丝的发丝──《爱丽丝惊魂记：疯狂再临》制作点滴</strong></a></li>
     
-      <li><a href="http://localhost:4000/web/intermediate-algorithm-scripting-2/">freeCodeCamp中阶算法（二） &middot; <strong>Intermediate Algorithm Scripting（二）</strong></a></li>
+      <li><a href="http://localhost:4000/web/intermediate-algorithm-scripting-3/">freeCodeCamp中阶算法（三） &middot; <strong>Intermediate Algorithm Scripting（三）</strong></a></li>
     
       <li class="text-right"><a href="http://localhost:4000/blog/archive/"><strong>全部 ›</strong></a></li>
 
