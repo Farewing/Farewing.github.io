@@ -31,7 +31,9 @@ tags:
 * $h$ 代表学习算法的解决方案或函数也称为假设
 
 同时，分析得到的线性方程为：
+<div>
 $$\begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}$$
+</div>
 
 ### 损失函数(Cost Function)
 
@@ -64,4 +66,4 @@ __批量梯度下降__(batch gradient descent)算法的公式为：
 
 #### \begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}
 
-其中要求$\theta_{0}$ 和 $\theta_{1}$ 同步更新。
+其中要求 $\theta_{0}$ 和 $\theta_{1}$ 同步更新。
