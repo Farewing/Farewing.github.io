@@ -64,6 +64,8 @@ __批量梯度下降__(batch gradient descent)算法的公式为：
 
 #### \begin{equation}\theta_{0}:=\theta_{0}-\alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\end{equation}
 
-#### \begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}
+{% raw %}
+$$\begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}$$
+{% endraw %}
 
 其中要求 $\theta_{0}$ 和 $\theta_{1}$ 同步更新。
