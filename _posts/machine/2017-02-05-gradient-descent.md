@@ -31,7 +31,7 @@ tags:
 * $h$ 代表学习算法的解决方案或函数也称为假设
 
 同时，分析得到的线性方程为：
-#### \begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}
+#### $$\begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}$$
 
 ### 损失函数(Cost Function)
 
