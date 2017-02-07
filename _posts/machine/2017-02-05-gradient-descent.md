@@ -40,7 +40,7 @@ $$
 ### 损失函数(Cost Function)
 
 为了得到目标线性方程，我们只需确定公式中的$\theta_{0}$和$\theta_{1}$，为了确定所选定的$\theta_{0}$和$\theta_{1}$效果好坏，通常情况下，我们使用一个损失函数(Cost Function)或者说是错误函数(Error Function)来评估$h_{\theta}$函数的好坏。损失函数如下：
-#### \begin{equation}J(\theta_{0},\theta_{1})=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{equation}
+#### $$\begin{equation}J(\theta_{0},\theta_{1})=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{equation}$$
 
 ### 梯度下降(Gradient Descent)
 梯度下降背后的思想是：开始时我们随机选择一个参数的组合 $(\theta_{0},\theta_{1},...,\theta_{n})$，计算代价函数，然后我们寻找下一个能让代价函数值下降最多的参数组合。我们持续这么做直到到到一个局部最小值，因为我们并没有尝试完所有的参数组合，所以不能确定我们得到的局部最小值是否是全局最小值，不同的初始参数组合，可能会得到不同的局部最小值。
