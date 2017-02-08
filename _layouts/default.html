@@ -1,10 +1,9 @@
-
 <!doctype html>
 <html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
 <head>
 	{% include _head.html %}
 </head>
-<body id="top-of-page" class="{{ page.format }}">
+<body id="top-of-page" class="{{ layout.format }}">
 	{% include _navigation.html %}
 
 	{% include _masthead.html %}
