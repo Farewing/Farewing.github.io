@@ -22,16 +22,16 @@ tags:
 
 ![linear1](/images/linear1.png)
 
-在该数据集中，只有一个自变量面积(feet)，和一个因变量价格($)，利用该数据集，我们的目的是训练一个线性方程，无限逼近所有数据点，然后利用该方程与给定的某一自变量（本例中为面积），可以预测因变量（本例中为房价）。我们将要用来描述这个回归问题的标记如下:
-* $m$ 代表训练集中实例的数量
-* $x$ 代表特征/输入变量
-* $y$ 代表目标变量/输出变量
-* $(x,y)$ 代表训练集中的实例
-* $(x^{(i)},y^{(i)})$ 代表第 $i$ 个观察实例
-* $h$ 代表学习算法的解决方案或函数也称为假设
+在该数据集中，只有一个自变量面积，和一个因变量价格，利用该数据集，我们的目的是训练一个线性方程，无限逼近所有数据点，然后利用该方程与给定的某一自变量（本例中为面积），可以预测因变量（本例中为房价）。我们将要用来描述这个回归问题的标记如下:
+* $m$ 代表训练集中实例的数量 
+* $x$ 代表特征/输入变量 
+* $y$ 代表目标变量/输出变量 
+* $(x,y)$ 代表训练集中的实例 
+* $(x^{(i)},y^{(i)})$ 代表第 $i$ 个观察实例 
+* $h$ 代表学习算法的解决方案或函数也称为假设 
 
 同时，分析得到的线性方程为：
-#### $$\begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}$$
+#### \begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}
 
 ### 损失函数(Cost Function)
 
@@ -44,7 +44,10 @@ tags:
 ![linear3](/images/linear3.png)
 
 __批量梯度下降__(batch gradient descent)算法的公式为：
-#### \begin{equation}\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1}) \qquad(for \; j=0 \; and \ j=1)\end{equation}
+$$
+\begin{equation}\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1}) \qquad(for \; j=0 \; and \ j=1)\end{equation}
+$$
+
 其中$\alpha$是学习率（Learning Rate）,它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大，在批量梯度下降中，我们每一次都同时让所有的参数减去学习速率乘以代价函数的导数。
 
 #### __对线性回归运用梯度下降法__
