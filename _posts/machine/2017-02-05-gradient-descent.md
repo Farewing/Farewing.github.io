@@ -22,20 +22,21 @@ tags:
 
 ![linear1](/images/linear1.png)
 
-在该数据集中，只有一个自变量面积，和一个因变量价格，利用该数据集，我们的目的是训练一个线性方程，无限逼近所有数据点，然后利用该方程与给定的某一自变量（本例中为面积），可以预测因变量（本例中为房价）。我们将要用来描述这个回归问题的标记如下:
-* $m$ 代表训练集中实例的数量 
-* $x$ 代表特征/输入变量 
-* $y$ 代表目标变量/输出变量 
-* $(x,y)$ 代表训练集中的实例 
-* $(x^{(i)},y^{(i)})$ 代表第 $i$ 个观察实例 
-* $h$ 代表学习算法的解决方案或函数也称为假设 
+在该数据集中，只有一个自变量面积，和一个因变量价格，利用该数据集，我们的目的是训练一个线性方程，无限逼近所有数据点，然后利用该方程与给定的某一自变量（本例中为面积），可以预测因变量（本例中为房价）。我们将要用来描述这个回归问题的标记如下: 
++ $m$ 代表训练集中实例的数量 
++ $x$ 代表特征/输入变量 
++ $y$ 代表目标变量/输出变量 
+- $(x,y)$ 代表训练集中的实例 
+- $(x^{(i)},y^{(i)})$ 代表第 $i$ 个观察实例 
+- $h$ 代表学习算法的解决方案或函数也称为假设 
 
-同时，分析得到的线性方程为：
+同时，分析得到的线性方程为： 
 #### \begin{equation}h_{\theta}=\theta_{0}+\theta_{1}x\end{equation}
 
 ### 损失函数(Cost Function)
 
-为了得到目标线性方程，我们只需确定公式中的$\theta_{0}$和$\theta_{1}$，为了确定所选定的$\theta_{0}$和$\theta_{1}$效果好坏，通常情况下，我们使用一个损失函数(Cost Function)或者说是错误函数(Error Function)来评估$h_{\theta}$函数的好坏。损失函数如下：
+为了得到目标线性方程，我们只需确定公式中的$\theta_{0}$和$\theta_{1}$，为了确定所选定的$\theta_{0}$和$\theta_{1}$效果好坏，通常情况下，我们使用一个损失函数(Cost Function)或者说是错误函数(Error Function)来评估$h_{\theta}$函数的好坏。损失函数如下： 
+
 #### \begin{equation}J(\theta_{0},\theta_{1})=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{equation}
 
 ### 梯度下降(Gradient Descent)
@@ -44,27 +45,26 @@ tags:
 ![linear3](/images/linear3.png)
 
 __批量梯度下降__(batch gradient descent)算法的公式为：
-$$
-\begin{equation}\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1}) \qquad(for \; j=0 \; and \ j=1)\end{equation}
-$$
+
+##### \begin{equation}\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1}) \qquad(for \; j=0 \; and \ j=1)\end{equation}
 
 其中$\alpha$是学习率（Learning Rate）,它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大，在批量梯度下降中，我们每一次都同时让所有的参数减去学习速率乘以代价函数的导数。
 
 #### __对线性回归运用梯度下降法__
 对我们之前的线性回归问题运用梯度下降法，关键在于求出代价函数的导数，即：
 
-#### \begin{equation}\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})=\frac{1}{2m}\frac{\partial}{\partial\theta_{j}}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{equation}
+##### \begin{equation}\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})=\frac{1}{2m}\frac{\partial}{\partial\theta_{j}}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{equation}
 
 带入$j=0$，$j=1$ 得：
 
-#### \begin{equation}\frac{\partial}{\partial\theta_{0}}J(\theta_{0},\theta_{1})=\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)}) \qquad(j=0)\end{equation}
+##### \begin{equation}\frac{\partial}{\partial\theta_{0}}J(\theta_{0},\theta_{1})=\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)}) \qquad(j=0)\end{equation}
 
-#### \begin{equation}\frac{\partial}{\partial\theta_{1}}J(\theta_{0},\theta_{1})=\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big) \quad(j=1)\end{equation}
+##### \begin{equation}\frac{\partial}{\partial\theta_{1}}J(\theta_{0},\theta_{1})=\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big) \quad(j=1)\end{equation}
 
 进一步得到
 
-#### \begin{equation}\theta_{0}:=\theta_{0}-\alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\end{equation}
+##### \begin{equation}\theta_{0}:=\theta_{0}-\alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\end{equation}
 
-#### \begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}
+##### $$\begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}$$
 
 其中要求$\theta_{0}$ 和 $\theta_{1}$ 同步更新。
