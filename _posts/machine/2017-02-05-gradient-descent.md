@@ -70,3 +70,51 @@ __批量梯度下降__(batch gradient descent)算法的公式为：
 ##### \begin{equation}\theta_{1}:=\theta_{1}-\alpha\frac{1}{m}\sum_{i=1}^{m}\big((h_{\theta}(x^{(i)})-y^{(i)})(x^{(i)})\big)\end{equation}
 
 其中要求$\theta_{0}$ 和 $\theta_{1}$ 同步更新。
+
+
+### 多变量线性回归(Multivariate Linear Regression)
+目前为止，我们探讨了单变量/特征的回归模型，现在我们对房价模型增加更多的特征，例如
+房间数楼层等，构成一个含有多个变量的模型，模型中的特征为 $x_{1},x_{2},...,x_{n}$ 。
+
+![linear4](/images/linear4.png)
+
+增添更多特征后，我们引入一系列新的注释：
+
+$$\begin{align*}x_j^{(i)} &= \text{value of feature } j \text{ in the }i^{th}\text{ training example} \newline x^{(i)}& = \text{the column vector of all the feature inputs of the }i^{th}\text{ training example} \newline m &= \text{the number of training examples} \newline n &= \left| x^{(i)} \right| ; \text{(the number of features)} \end{align*}$$
+
+支持多变量的假设 h(hypothesis) 表示为：
+
+#### $$\begin{align*}h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3 + \cdots + \theta_n x_n\end{align*}$$
+
+该公式可转化为特征矩阵：
+
+#### $$\begin{align*}h_\theta(x) =\begin{bmatrix}\theta_0 \hspace{2em} \theta_1 \hspace{2em} ... \hspace{2em} \theta_n\end{bmatrix}\begin{bmatrix}x_0 \newline x_1 \newline \vdots \newline x_n\end{bmatrix}= \theta^T x\end{align*}$$
+
+#### 多变量梯度下降(Gradient Descent for Multiple Variables)
+与单变量线性回归类似，在多变量线性回归中，我们只需重复我们的 'n' 个特征：
+
+##### $$\begin{align*} & \text{repeat until convergence:} \; \lbrace \newline \; & \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; & \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; & \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline & \cdots \newline \rbrace \end{align*}$$
+
+同理，多变量线性回归的批量梯度下降算法为：
+
+##### $$\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \; & \theta_j := \theta_j - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_j^{(i)} \; & \text{for j := 0...n}\newline \rbrace\end{align*}$$
+
+#### 特征缩放(Feature Scaling)
+在我们面对多维特征问题的时候，我们要保证这些特征都具有相近的尺度，这将帮助梯度下降算法更快地收敛。
+以房价问题为例，假设我们使用两个特征，房屋的尺寸和房间的数量，尺寸的直为0-2000平方英尺，而房间数量的直则是 0-5，以两个参数分别为横纵坐标，绘制代价函数的等高线图能看出图像会显得很扁，梯度下降算法需要非常多次的迭代才能收敛。
+
+![linear5](/images/linear5.png)
+
+解决的方法是尝试将所有特征的尺度都尽量缩放到-1 到 1 之间。最简单的方法是令：
+
+#### $$x_i := \dfrac{x_i - \mu_i}{s_i}$$
+
+其中$\mu_i$是平均值，${s_i}$是标准差。
+
+#### 学习率$\alpha$(Learning Rate)
+调试梯度下降：绘制迭代次数和代价函数的图表来观测算法在何时趋于收敛，横轴为迭代次数，纵轴为$J(\theta)$，如果$J(\theta)$有曾增加，我们需要减小$\alpha$。
+自动收敛测试：如果代价函数的变化值比预先设定的阀值（例如0.001）小，就认为收敛。但实际操作中很难选定阈值。
+
+![linear6](/images/linear6.png)
+
+总结来说，梯度下降算法的每次迭代受到学习率的影响，如果学习率$\alpha$过小，则达到收敛所需的迭代次数会非常高；如果学习率$\alpha$过大，每次迭代可能不会减小代价函数，可能会越过局部最小值导致无法收敛。
