@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Build a JavaScript Calculator
-teaser: "Advanced Front End Development Projects of freeCodeCamp."
+teaser: "Advanced Front End Development Projects of freeCodeCamp(一)."
 categories:
     - web
 tags:
@@ -17,6 +17,10 @@ tags:
 功能: 可以使用清除按钮清空当前的所有输入内容.
 
 功能: 可以把多个运算连接起来操作, 直到按下等号键, 计算器输出正确的运算结果.
+
+![calculator](/images/calculator.png)
+
+代码如下：
 
 ### HTML
 {% highlight html %}
