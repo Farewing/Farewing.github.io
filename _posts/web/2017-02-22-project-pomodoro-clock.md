@@ -22,9 +22,7 @@ tags:
 
 其中前端采用Bootstrap框架，图形和逻辑处理应用d3库，和JQuery库。
 
-齿轮旋转部分代码见d3库[例子][3]。
-
-代码如下：
+齿轮旋转部分代码为d3库[例子][3]，代码如下：
 
 ### HTML
 {% highlight html %}
@@ -171,7 +169,7 @@ d3.timer(function() {
 {% endhighlight %}
 
 
-[源码下载][4]
+[项目源码][4]
 
 
 ### All Javascript Project
