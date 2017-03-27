@@ -53,29 +53,81 @@ OscillatorNode 可以产生4种波形，通过设置type属性来指定波形的
 * triangle: 三角波
 * sawtooth: 锯齿波
 
-###
+### 设置音量
+{% highlight javascript %}
+var oscillator = audioCtx.createOscillator();
+oscillator.frequency.value = 110;
+oscillator.type = 'triangle';
+oscillator.start(0.0);
+var errNode = audioCtx.createGain();
+oscillator.connect(errNode);
+errNode.gain.value = 0;
+errNode.connect(audioCtx.destination);
+{% endhighlight %}
+
+[GainNode][2] 通过设置GainNode.gain.value 的值来控制音量，通过设置音量为 0，模仿声音停止。AudioParam 对象有一些可以根据时间值自动调整 value 属性与 defaultValue 属性等值的方法，被称为自动方法(AutomaticMethod)。
+linearRampToValueAtTime 是自动方法中的一种，操作value属性的值使其在一定时间内从当前值变化到设定值。可以这样操作 GainNode 的 gain 属性来实现淡入·淡出。Web Audio API 将当前时刻的值保存在了 AudioContext 的 currentTime 属性中，单位为秒。
+
+{% highlight javascript %}
+errNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 0.05);
+{% endhighlight %}
+
+#### 应用上述几个函数制作的小游戏 [Simon game][3]
+[源码][4]
+
+### 获取短音频
+从本地获取单音文件，Chrome浏览器不支持 Ajax 跨域请求获取本地文件。解决办法，直接在 chrome 快捷键图标右键，点击属性，修改目标（在后面加上–allow-file-access-from-files，注意–前面有一个空格），这样就可以正确访问了。Firefox可以正常获取文件。
+
+{% highlight javascript %}
+var xml = new XMLHttpRequest();
+xml.responseType = 'arraybuffer';
+xml.open('GET', 'media/piano.mp3', true);
+xml.onload = function() {
+	// 音源ファイルをバイナリデータからデコード
+	audioCtx.decodeAudioData(
+		xml.response,
+		function(_data) {
+			data = _data;
+		},
+		function(e) {
+			alert(e.err);
+		}
+	);
+};
+xml.send();
+{% endhighlight %}
+
+### 改变音调
+AudioNode有可以改变自身状态的可变属性。
+
+这次使用的AudioBufferSourceNode，有一个可以改变自身播放速度的playbackRate属性，加快或减慢播放速度时声音的频率会随着改变，利用这个来改变声音的音调。
+
+通过AudioBufferSourceNode的playbackRate属性的value值来增减播放速度，不改变的情况下设定为1。
+
+{% highlight javascript %}
+bufferSource.buffer = data;
+// 设定为2倍的播放速度，频率会变为之前的2倍，音调会升高
+bufferSource.playbackRate.value = 2;
+bufferSource.connect(ctx.destination);
+bufferSource.start(0);
+{% endhighlight %}
+
+由于加快播放速度时，频率会随其等比例增大，因此音调会升高。
+
+{% highlight javascript %}
+bufferSource.buffer = data;
+// 设定为0.5倍的播放速度，频率会变为之前的一般，音调会降低
+bufferSource.playbackRate.value = 0.5;
+bufferSource.connect(ctx.destination);
+bufferSource.start(0);
+{% endhighlight %}
+
+[Demo][6]
+
+### 待续.....
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+扩展阅读 [博客][5]
 
 
 
@@ -83,3 +135,8 @@ OscillatorNode 可以产生4种波形，通过设置type属性来指定波形的
 
 
 [1]: https://developer.mozilla.org/zh-CN/docs/Web/API/OscillatorNode
+[2]: https://developer.mozilla.org/en-US/docs/Web/API/GainNode/gain
+[3]: hhttps://farewing.github.io/Simon/
+[4]: https://github.com/Farewing/Simon
+[5]: http://yrq110.me/2017/02/18/20170218-sheng-chord-web-audio-api/
+[5]: https://farewing.github.io/Piano/
