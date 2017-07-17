@@ -5,7 +5,7 @@ teaser: "React Project (一)"
 categories:
     - web
 tags:
-    - project
+    - React project
 ---
 
 ### A Markdown Previewer
@@ -16,7 +16,8 @@ tags:
 
 
 ![clock](/images/markdown.png)
-https://farewing.github.io/Markdown-previewer/
+
+[项目链接][https://github.com/Farewing/Markdown-previewer]
 
 此项目为freeCodeCamp中React的第一个实践项目，学习过程中主要参考 [博客][2]。
 
@@ -78,7 +79,7 @@ https://farewing.github.io/Markdown-previewer/
 ### All Javascript Project
 {: .t60 }
 
-{% include list-posts tag='project' %}
+{% include list-posts tag='React project' %}
 
 [1]: http://www.ruanyifeng.com/blog/2012/06/sass.html
 [2]: http://www.ruanyifeng.com/blog/2015/03/react.html
