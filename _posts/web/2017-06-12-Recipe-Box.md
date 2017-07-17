@@ -20,7 +20,8 @@ tags:
 
 
 ![camper](/images/recipe.png)
-[项目链接][https://github.com/Farewing/Recipe-Box]
+
+[项目链接][3]
 
 此项目为freeCodeCamp中React的第三个实践项目。重点包括使用React-Bootstrap组件库，本地存储window.localStorage，包括控件重绘requestAnimationFrame()等。
 
@@ -199,3 +200,4 @@ ReactDOM.render(<ModalAdd />, document.getElementById("button"));
 
 [1]: http://codepen.io/FreeCodeCamp/full/qbqqJm/
 [2]: http://codepen.io/FreeCodeCamp/full/LGbbqj
+[3]: https://github.com/Farewing/Recipe-Box

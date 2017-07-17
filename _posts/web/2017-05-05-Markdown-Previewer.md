@@ -17,7 +17,9 @@ tags:
 
 ![clock](/images/markdown.png)
 
-[项目链接][https://github.com/Farewing/Markdown-previewer]
+
+[项目链接][3]
+
 
 此项目为freeCodeCamp中React的第一个实践项目，学习过程中主要参考 [博客][2]。
 
@@ -83,3 +85,4 @@ tags:
 
 [1]: http://www.ruanyifeng.com/blog/2012/06/sass.html
 [2]: http://www.ruanyifeng.com/blog/2015/03/react.html
+[3]: https://github.com/Farewing/Markdown-previewer

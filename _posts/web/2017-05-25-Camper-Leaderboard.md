@@ -20,7 +20,10 @@ tags:
 
 
 ![camper](/images/camper.png)
-[项目链接][https://github.com/Farewing/Camper-Leaderboard]
+
+
+[项目链接][3]
+
 
 此项目为freeCodeCamp中React的第二个实践项目，重点包括Ajax请求获取数据，根据用户点击展示不同的数据。
 
@@ -159,3 +162,4 @@ $(".hidden").hide();
 
 [1]: http://codepen.io/FreeCodeCamp/full/qbqqJm/
 [2]: http://codepen.io/FreeCodeCamp/full/qbqqJm/
+[3]: https://github.com/Farewing/Camper-Leaderboard
